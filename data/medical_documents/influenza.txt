@@ -1,0 +1,32 @@
+# Influenza
+
+## Overview
+Influenza, or the flu, is a contagious respiratory illness caused by influenza viruses that can range from mild to severe and occasionally lead to serious complications.
+
+## Common Symptoms
+- Fever or chills
+- Muscle aches
+- Fatigue
+- Cough
+- Sore throat
+- Headache
+
+## Causes
+- Infection with influenza a or b viruses
+- Airborne transmission through droplets
+- Contact with contaminated surfaces
+
+## Treatment Options
+- Rest and fluids
+- Antiviral medications if started early
+- Fever reducers and pain relievers
+- Monitoring for complications
+
+## Prevention Tips
+- Annual flu vaccination
+- Frequent handwashing
+- Avoiding close contact with sick individuals
+- Covering coughs and sneezes
+
+## When to See a Doctor
+Consult a licensed healthcare provider if symptoms of influenza are severe, persistent, or worsening, or if you are uncertain about the right course of action. This document is for general informational purposes only and is not a substitute for professional medical advice.

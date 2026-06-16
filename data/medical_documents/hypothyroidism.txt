@@ -1,0 +1,31 @@
+# Hypothyroidism
+
+## Overview
+Hypothyroidism is a condition in which the thyroid gland does not produce enough thyroid hormone, slowing down the body's metabolism.
+
+## Common Symptoms
+- Fatigue
+- Weight gain
+- Cold intolerance
+- Dry skin
+- Hair thinning
+- Depression
+
+## Causes
+- Autoimmune thyroid disease
+- Iodine deficiency
+- Thyroid surgery or radiation treatment
+- Certain medications
+
+## Treatment Options
+- Daily thyroid hormone replacement therapy
+- Regular monitoring of thyroid hormone levels
+- Dosage adjustments as needed
+
+## Prevention Tips
+- Adequate dietary iodine intake
+- Routine thyroid screening for at-risk individuals
+- Monitoring symptoms after thyroid-related treatments
+
+## When to See a Doctor
+Consult a licensed healthcare provider if symptoms of hypothyroidism are severe, persistent, or worsening, or if you are uncertain about the right course of action. This document is for general informational purposes only and is not a substitute for professional medical advice.

@@ -10,6 +10,7 @@ def get_embeddings(provider=None):
 
     if provider == "gemini":
         from langchain_google_genai import GoogleGenerativeAIEmbeddings
-        return GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+       
+        return GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
     raise ValueError(f"Unsupported embedding provider: {provider}")

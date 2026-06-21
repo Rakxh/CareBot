@@ -1,4 +1,10 @@
 import os
+import sys
+
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+
 import streamlit as st
 from src.embeddings import get_embeddings
 from src.vector_store import build_and_save, load_vector_store
@@ -53,6 +59,7 @@ def load_agent(provider, embedding_provider, vector_db_path):
     return build_agent(vector_store, llm)
 
 
+if not index_exists(vector_db_path):
     st.warning(
         "No vector index found yet. This usually happens on a fresh deploy, "
         "since the index isn't committed to the repo.\n\n"

@@ -24,7 +24,6 @@ drive_folder_id = os.getenv("GOOGLE_DRIVE_FOLDER_ID")
 
 
 def index_exists(path):
-    """A FAISS index saved with save_local() always writes index.faiss + index.pkl."""
     return os.path.isfile(os.path.join(path, "index.faiss")) and os.path.isfile(
         os.path.join(path, "index.pkl")
     )
@@ -97,7 +96,6 @@ if not index_exists(vector_db_path):
     st.stop()
 
 
-
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -115,7 +113,23 @@ if user_input:
     try:
         agent_executor = load_agent(provider, embedding_provider, vector_db_path)
         response = agent_executor.invoke({"input": user_input, "chat_history": []})
-        answer = response["output"]
+        answer = response.get("output", "")
+
+        if not answer or not answer.strip():
+            intermediate = response.get("intermediate_steps", [])
+            if intermediate:
+                last_observation = intermediate[-1][1]
+                answer = (
+                    "I found some relevant information but had trouble forming "
+                    "a full answer. Here's what I retrieved:\n\n"
+                    f"{last_observation}"
+                )
+            else:
+                answer = (
+                    "I wasn't able to generate an answer for that question. "
+                    "This can happen occasionally with the current model — "
+                    "try rephrasing the question, or try again in a moment."
+                )
     except Exception as exc:
         answer = f"Something went wrong while answering: {exc}"
 

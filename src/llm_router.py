@@ -10,6 +10,7 @@ def get_llm(provider=None, temperature=0.2):
 
     if provider == "gemini":
         from langchain_google_genai import ChatGoogleGenerativeAI
-        return ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=temperature)
+      
+        return ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=temperature)
 
     raise ValueError(f"Unsupported LLM provider: {provider}")

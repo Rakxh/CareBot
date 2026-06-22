@@ -41,10 +41,9 @@ def build_agent(vector_store, llm, k=4):
     )
 
     agent = create_tool_calling_agent(llm, tools, prompt)
-  
     return AgentExecutor(
         agent=agent,
         tools=tools,
-        verbose=True,
+        verbose=False,
         return_intermediate_steps=True,
     )
